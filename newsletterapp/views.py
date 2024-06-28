@@ -19,7 +19,7 @@ def subscription_view(request):
                     message_type = "error"
                 else:
                     Subscriber.objects.create(email=email)
-                    message = "Subscription successful!"
+                    message = "123 Subscription successful!"
                     message_type = "success"
             elif action == 'unsubscribe':
                 if Subscriber.objects.filter(email=email).exists():
